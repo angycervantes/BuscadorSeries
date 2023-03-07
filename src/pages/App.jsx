@@ -23,7 +23,7 @@ function App () {
       summary: serie.show.summary,
       idioma: serie.show.language,
       rating: serie.show.rating.average,
-      image: serie.show.image.medium,
+      image: serie?.show?.image?.medium,
       isFav: false
     }))
 

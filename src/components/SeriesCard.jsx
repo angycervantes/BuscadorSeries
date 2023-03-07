@@ -5,7 +5,8 @@ const SeriesCard = ({ id, name = '', summary = '', idioma = '', rating = '', ima
   return (
     <div className='card'>
       <div className='row'>
-        <img className='mx-auto col-8 gy-2' src={image} alt={name} />
+        <img src={image} alt={name} className='mx-auto col-8 gy-2' />
+        {!image && <p className='text-center'>...Cargando</p>}
       </div>
       <ButtonIsFav isFavProp={isFav} />
       <div className='card-body'>

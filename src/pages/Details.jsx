@@ -21,10 +21,10 @@ function Details () {
       <Link className='btn btn-primary' to='/'> Home </Link>
       {validateSeries.length !== 0 && (
         <article className='row g-0'>
-          <div className='col-md-4'>
-            <img src={serie?.show?.image?.medium ? serie.show.image.medium : 'https://static.tvmaze.com/uploads/images/medium_portrait/198/495987.jpg'} className='img-fluid rounded-start' alt={serie.show.title} />
+          <div className='col-md-3'>
+            <img src={serie?.image?.medium ? serie.image.medium : 'https://static.tvmaze.com/uploads/images/medium_portrait/198/495987.jpg'} className='mx-auto col-10 gy-2' alt={serie.name} />
           </div>
-          <div className='col-md-8'>
+          <div className='col-md-8 gy-5'>
             <div className='card-body'>
               <h3>{serie.name}</h3>
               <p dangerouslySetInnerHTML={{ __html: serie.summary }}></p>

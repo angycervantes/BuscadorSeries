@@ -1,12 +1,12 @@
 
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { instance } from '../services/instance'
 
 function Cast () {
   const { id } = useParams()
 
-  const [cast, setCast]= useState({})
+  const [cast, setCast] = useState({})
 
   // const mappingTemporadas =
   //    temporadas.map((temporada) => ({
